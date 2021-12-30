@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500;900&family=Open+Sans&family=Shizuru&display=swap"
+        rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+
+    <title>Naty-App</title>
+</head>
+
+<body>
+    <div class="gridContainer">
+        <nav class="topBar">
+
+        </nav>
+        <div class="tecladoContainer">
+            <div class="containerABC">
+                <div class="containerChild">
+                    <input type="button" value="A" onclick="addText('A')">
+                    <input type="button" value="B" onclick="addText('B')">
+                    <input type="button" value="C" onclick="addText('C')">
+                </div>
+                <div class="containerChild">
+                    <input type="button" value="D" onclick="addText('D')">
+                    <input type="button" value="E" onclick="addText('E')">
+                    <input type="button" value="F" onclick="addText('F')">
+                </div>
+            </div>
+            <div class="containerABC">
+                <div class="containerChild">
+                    <input type="button" value="J" onclick="addText('G')">
+                    <input type="button" value="H" onclick="addText('H')">
+                    <input type="button" value="I" onclick="addText('I')">
+                </div>
+                <div class="containerChild">
+                    <input type="button" value="J" onclick="addText('J')">
+                    <input type="button" value="K" onclick="addText('K')">
+                    <input type="button" value="L" onclick="addText('L')">
+                </div>
+            </div>
+            <div class="containerABC">
+                <div class="containerChild">
+                    <input type="button" value="M" onclick="addText('M')">
+                    <input type="button" value="N" onclick="addText('N')">
+                    <input type="button" value="Ñ" onclick="addText('Ñ')">
+                </div>
+                <div class="containerChild">
+                    <input type="button" value="O" onclick="addText('O')">
+                    <input type="button" value="P" onclick="addText('P')">
+                    <input type="button" value="Q" onclick="addText('Q')">
+                </div>
+            </div>
+            <div class="containerABC">
+                <div class="containerChild">
+                    <input type="button" value="R" onclick="addText('R')">
+                    <input type="button" value="S" onclick="addText('S')">
+                    <input type="button" value="T" onclick="addText('T')">
+                </div>
+                <div class="containerChild">
+                    <input type="button" value="U" onclick="addText('U')">
+                    <input type="button" value="V" onclick="addText('V')">
+                    <input type="button" value="W" onclick="addText('W')">
+                </div>
+            </div>
+            <div class="containerXYZ">
+                <div class="containerChild_XYZ">
+                    <input type="button" value="X" onclick="addText('X')">
+                    <input type="button" value="Y" onclick="addText('Y')">
+                    <input type="button" value="Z" onclick="addText('Z')">
+                </div>
+            </div>
+        </div>
+        <div class="tecladoEspecial">
+            <div class="containerESP">
+                <input type="button" value="ESPACIO" onclick="addText(' ')">
+                <input type="button" id="borrar" value="BORRAR" onclick="deleteText1()">
+                <input class="borrarTodo" type="button" value="BORRAR TODO" onclick="deleteText2('')">
+            </div>
+        </div>
+        <div class="textContainer">
+            <textarea name="" id="inputArea" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
