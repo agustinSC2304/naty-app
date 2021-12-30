@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*Cambiar fuente*/
+}
+
+/* GRID */
+
+.gridContainer {
+    display: grid;
+    height: auto;
+    grid-template-rows: 0% 90vh 14vh 20vh;
+    grid-template-areas: 
+    "barra"
+    "teclado"
+    "tecladoESP"
+    "texto";
+}
+
+.topBar {
+    grid-area: barra;
+}
+.tecladoContainer {
+    grid-area: teclado;
+}
+.tecladoEspecial {
+    grid-area: tecladoESP;
+
+}
+.textContainer {
+    grid-area: texto;
+}
+
+/* FLEXBOX */
+
+.topBar {
+    display: grid;
+    background-color: rgb(15, 15, 15);
+}
+
+.tecladoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tecladoEspecial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerABC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    gap: 0.2%;
+}
+
+.containerXYZ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.containerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 95%;
+
+    gap: 2%;
+}
+
+.containerChild_XYZ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 95%;
+    gap: 2%;
+}
+
+.containerESP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    gap: 1%;
+    padding: 2%;
+}
+
+input {
+    background-color: purple;
+    width: 30%;
+    height: 90%;
+    border-radius: 0px;
+    border: none;
+    border: none;
+    font-size: xxx-large;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.containerESP input {
+    height: 90%;
+    width: 33%;
+    font-size: large;
+    text-align: center;
+}
+
+input:hover {
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px;
+}
+
+/* VISOR DE TEXTO */
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.textContainer textarea {
+    border-style: solid;
+    border-color: black;
+    width: 98%;
+    height: 95%;
+    font-size: xxx-large;
+    color: black;
+}
+
+
+    /* TABLET */
+
+@media (max-width: 1024px) {
+    .gridContainer {
+        grid-template-rows: 0% 180vh 14vh 20vh;
+    }
+
+    .topBar {
+        display: grid;
+        background-color: rgb(15, 15, 15);
+    }
+    
+    .tecladoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: -12%;
+    }
+    
+    .tecladoEspecial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerABC {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        width: 100%;
+        gap: 2%;
+    }
+   
+
+    .containerXYZ {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 11%;
+        width: 100%;
+    }
+    
+    .containerChild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        gap: 2%;
+    }
+    
+    .containerChild_XYZ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        gap: 2%;
+    }
+    
+    .containerESP {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 95%;
+        gap: 1%;
+        padding: 2%;
+    }
+    
+    input {
+        background-color: purple;
+        width: 30%;
+        height: 95%;
+        border-radius: 0px;
+        border: none;
+        font-size: xxx-large;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .containerESP input {
+        height: 90%;
+        width: 33%;
+        font-size: large;
+        text-align: center;
+    }
+    
+    input:hover {
+        background: #a945c7;
+        box-shadow: 0 0 10px #a945c7, 0 0 40px;
+    }
+    
+    /* VISOR DE TEXTO */
+    
+    .textContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .textContainer textarea {
+        border-style: solid;
+        border-color: black;
+        width: 98%;
+        height: 95%;
+        font-size: xxx-large;
+        color: black;
+    }
+
+}
